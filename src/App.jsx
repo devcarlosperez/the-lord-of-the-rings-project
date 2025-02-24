@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Characters from "./pages/characters/Characters";
 import MiddleEarthMap from "./pages/middle-earth-map/MiddleEarthMap";
+import "./App.css"
 
 function App() {
 

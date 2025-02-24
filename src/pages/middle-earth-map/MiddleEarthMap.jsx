@@ -1,7 +1,9 @@
+import Header from "../../components/header/Header";
+
 function MiddleEarthMap() {
   return (
     <>
-      <p>Pagina tierra media</p>
+      <Header/>
     </>
   )
 }

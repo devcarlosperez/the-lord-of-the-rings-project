@@ -1,0 +1,103 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f612f;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.logo-image {
+  height: 50px;
+}
+
+.logo-name {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo-name:hover {
+  color: #eee118;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+nav a {
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav a:hover {
+  color: #eee118;
+}
+
+/* 📌 Small devices (600px and up) */
+@media only screen and (min-width: 600px) {
+  .logo-name {
+    font-size: 20px;
+  }
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 70px;
+  }
+
+  .logo {
+    flex-direction: row;
+  }
+
+  .logo-image {
+    height: 60px;
+  }
+
+  .logo-name {
+    font-size: 22px;
+  }
+
+  nav {
+    margin-top: 0;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header-container {
+    padding: 0 20px;
+    height: 80px;
+  }
+
+  .logo-image {
+    height: 70px;
+  }
+
+  .logo-name {
+    font-size: 24px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+}

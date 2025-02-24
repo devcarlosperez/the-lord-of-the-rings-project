@@ -1,7 +1,9 @@
+import Header from "../../components/header/Header";
+
 function Characters() {
   return (
     <>
-      <p>Pagina characters</p>
+      <Header/>
     </>
   )
 }
