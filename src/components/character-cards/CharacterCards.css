@@ -1,0 +1,57 @@
+.character-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.character-card {
+  background-color: #EAD7B7;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 39px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 39px -7px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 39px -7px rgba(0,0,0,0.75);
+  text-align: center;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.character-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 2px solid #5A3E2B;
+}
+
+.character-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #5A3E2B;
+  margin-top: 10px;
+}
+
+.character-description {
+  font-size: 0.9em;
+  color: #3E2C1C;
+  margin-top: 8px;
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .character-cards-container {
+    justify-content: space-around;
+  }
+  .character-card {
+    width: 45%;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .character-card {
+    width: 30%;
+  }
+}

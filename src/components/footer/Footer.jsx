@@ -48,7 +48,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>© 2024 The Lord of the Rings All rights reserved</p>
-        <p>Created by Carlos Luis Perez Santana</p>
+        <p className="author">Created by Carlos Luis Perez Santana</p>
       </div>
     </footer>
   );

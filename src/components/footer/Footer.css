@@ -1,9 +1,8 @@
 .footer {
-  background-color: #7f612f;
+  background-color: #2C3E50;
   color: white;
   padding: 20px;
   max-height: 780px;
-  margin-top: 100px;
   width: 100%;
 }
 
@@ -18,7 +17,8 @@
 }
 
 .footer-left img {
-  width: 80px;
+  height: 80px;
+  width: 100px;
 }
 
 .footer-left p {
@@ -79,6 +79,10 @@ li a:hover {
   text-align: center;
   font-size: 14px;
   margin-top: 15px;
+}
+
+.author {
+  margin-top: 7px;
 }
 
 /* 📌 Medium devices (768px and up) */

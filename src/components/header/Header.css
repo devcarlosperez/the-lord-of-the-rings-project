@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #7f612f;
+  background-color: #2C3E50;
   width: 100%;
   padding: 10px 0;
 }
@@ -16,7 +16,8 @@
 }
 
 .logo-image {
-  height: 50px;
+  height: 80px;
+  width: 90px;
 }
 
 .logo-name {
