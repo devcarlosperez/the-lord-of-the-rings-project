@@ -48,13 +48,6 @@ nav a:hover {
   color: #eee118;
 }
 
-/* 📌 Small devices (600px and up) */
-@media only screen and (min-width: 600px) {
-  .logo-name {
-    font-size: 20px;
-  }
-}
-
 /* 📌 Medium devices (768px and up) */
 @media only screen and (min-width: 768px) {
   .header-container {
