@@ -1,8 +1,30 @@
-# React + Vite
+# The Lord of the Rings
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a comprehensive and interactive wiki dedicated to the world of J.R.R. Tolkien's *The Lord of the Rings*. It provides detailed information about the characters, places, events, and lore that shape the legendary Middle-earth.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
+
+1. Clone this project in a new folder: ```git clone https://github.com/devcarlosperez/the-lorg-of-the-rings-project```
+2. Navigate to the project folder: ```cd the-lord-of-the-rings-project```
+3. Install the required dependencies by running: ```npm install```
+4. Enjoy!!: ```npm run dev```
+
+## Build With
+
+
+## Third-party Components Used
+
+- [*Boxicons*](https://boxicons.com/)
+
+## Tutorials
+
+- I've based the structure and style of this README on two templates: [Template 1](https://github.com/devcarlosperez/japan-project) and [Template 2](https://github.com/othneildrew/Best-README-Template)
+
+
+## Acknowdledgments
+
+## Author
+
+Carlos Luis Pérez Santana
