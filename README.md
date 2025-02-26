@@ -18,6 +18,7 @@ This project is a comprehensive and interactive wiki dedicated to the world of J
 
 - [*Boxicons*](https://boxicons.com/)
 - [*Figma*](https://www.figma.com/files/team/1472268528954860484/recents-and-sharing?fuid=1472268526863244444)
+- [*Leaflet*](https://react-leaflet.js.org/)
 
 ## Tutorials
 

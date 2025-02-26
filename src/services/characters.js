@@ -1,4 +1,4 @@
-const characters = [
+const CHARACTERS = [
   {
     name: "Frodo Bolsón",
     image: "/images/frodo.webp",
@@ -61,4 +61,4 @@ const characters = [
   }
 ]
 
-export default characters;
+export default CHARACTERS;
