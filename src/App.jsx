@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Characters from "./pages/characters/Characters";
-import MiddleEarthMap from "./pages/middle-earth-map/MiddleEarthMap";
+import MiddleEarthMap from "./pages/hobbiton/Hobbiton";
 import "./App.css"
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         <Route path="*" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/characters" element={<Characters/>}/>
-        <Route path="/map" element={<MiddleEarthMap/>}/>
+        <Route path="/hobbiton" element={<MiddleEarthMap/>}/>
       </Routes>
     </BrowserRouter>
   )

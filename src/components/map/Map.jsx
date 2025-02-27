@@ -1,24 +1,20 @@
-import { MapContainer, ImageOverlay } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import './Map.css';
 
 function Map() {
-  const POSITION = [51.505, -0.09];
-  
-  const BOUNDS = [
-    [30.0, -60.0],
-    [70.0, 60.0],
-  ];
-
-  const MIDDLE_EARTH_MAP = "/images/middle-earth-map.jpg";
+  const POSITION = [-37.869383, 175.681950];
 
   return (
-    <MapContainer
-      center={POSITION} 
-      zoom={5}
-      scrollWheelZoom={false}
-      className="map-container"
-    >
-      <ImageOverlay url={MIDDLE_EARTH_MAP} bounds={BOUNDS} />
+    <MapContainer center={POSITION} zoom={13} scrollWheelZoom={false} className="map-container">
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={POSITION}>
+        <Popup>
+          Welcome to Hobbiton!
+        </Popup>
+      </Marker>
     </MapContainer>
   );
 }

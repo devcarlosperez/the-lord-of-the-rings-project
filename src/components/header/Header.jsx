@@ -10,7 +10,7 @@ function Header() {
       <nav>
         <a href="/home">Home</a>
         <a href="/characters">Characters</a>
-        <a href="/map">Middle Earth Map</a>
+        <a href="/hobbiton">Hobbiton</a>
       </nav>
     </header>
   )
