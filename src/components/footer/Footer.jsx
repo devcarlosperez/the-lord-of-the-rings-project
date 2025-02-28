@@ -26,19 +26,19 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h4>Movement</h4>
+            <h4>Events</h4>
             <ul>
-              <li><a href="#">Movement</a></li>
-              <li><a href="#">Support us</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Renting</a></li>
+              <li><a href="#">Upcoming Events</a></li>
+              <li><a href="#">Past Events</a></li>
+              <li><a href="#">Workshops</a></li>
+              <li><a href="#">Webinars</a></li>
             </ul>
           </div>
           <div>
             <h4>Help</h4>
             <ul>
               <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Conditions</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">FAQs</a></li>
             </ul>

@@ -11,6 +11,10 @@ This project is a comprehensive and interactive wiki dedicated to the world of J
 3. Install the required dependencies by running: ```npm install```
 4. Enjoy!!: ```npm run dev```
 
+## Inspiration
+
+https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Community)?node-id=0-1&p=f&t=umLqzj9UI8opmE0q-0
+
 ## Build With
 
 

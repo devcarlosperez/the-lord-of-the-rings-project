@@ -1,0 +1,29 @@
+.banner-container {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-container h1 {
+  color: #5A3E2B;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .banner-container {
+    height: 400px;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .banner-container {
+    height: 450px;
+  }
+}
