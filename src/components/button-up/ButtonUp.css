@@ -1,13 +1,51 @@
 .button-up {
-  
+  position: fixed;
+  background-color: transparent;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  padding: 0;
+  display: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.button-up.visible {
+  display: block;
+}
+
+.button-image {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+}
+
+.button-image:hover {
+  opacity: 1;
 }
 
 /* 📌 Medium devices (768px and up) */
 @media only screen and (min-width: 768px) {
+  .button-up {
+    bottom: 30px;
+    right: 30px;
+  }
 
+  .button-image {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /* 📌 Large devices (1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .button-up {
+    bottom: 40px;
+    right: 40px;
+  }
 
+  .button-image {
+    width: 60px;
+    height: 60px;
+  }
 }

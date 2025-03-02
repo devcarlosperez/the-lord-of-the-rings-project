@@ -1,4 +1,4 @@
-.map-container {
+.hobbiton-map-container {
   width: 80%;
   height: 300px;
   margin: 20px auto;
@@ -6,7 +6,7 @@
 
 /* 📌 Medium devices (768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .map-container {
+  .hobbiton-map-container {
     width: 70%;
     height: 400px;
     margin: 20px auto;
@@ -15,9 +15,9 @@
 
 /* 📌 Large devices (más de 1200px) */
 @media only screen and (min-width: 1200px) {
-  .map-container {
+  .hobbiton-map-container {
     width: 60%;
     height: 500px;
-    margin: 20px auto;    
+    margin: 20px auto;
   }
 }

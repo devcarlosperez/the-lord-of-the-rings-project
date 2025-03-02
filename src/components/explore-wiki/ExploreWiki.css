@@ -1,0 +1,48 @@
+.explore-wiki-container {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.explore-wiki-container h2 {
+  color: #5A3E2B;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+}
+
+.button-container a {
+  background-color: #5A3E2B;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+  background-color: #3E2C1C;
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .button-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .button-container a {
+    padding: 12px 25px;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .button-container a {
+    padding: 15px 30px;
+  }
+}
