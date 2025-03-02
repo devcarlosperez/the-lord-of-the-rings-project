@@ -1,0 +1,60 @@
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAD7B7;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 40px 20px;
+}
+
+.introduction-container img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.introduction-container p {
+  max-width: 90%;
+  text-align: center;
+  color: #3E2C1C;
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .introduction-container {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .introduction-container img {
+    width: 40%;
+    max-width: 400px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .introduction-container p {
+    max-width: 50%;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .introduction-container {
+    padding: 25px;
+  }
+
+  .introduction-container img {
+    width: 35%;
+    max-width: 500px;
+  }
+
+  .introduction-container p {
+    max-width: 45%;
+  }
+}

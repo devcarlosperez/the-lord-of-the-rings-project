@@ -17,6 +17,11 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 
 ## Build With
 
+- *React*
+- *Vite*
+- *HTML5*
+- *CSS3*
+- *JavaScript*
 
 ## Third-party Components Used
 
@@ -29,6 +34,8 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 
 
 ## Acknowdledgments
+
+Special thanks to Professor Tiburcio for his guidance and feedback, and to my classmates for their support and ideas throughout development.
 
 ## Author
 
