@@ -27,6 +27,7 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 
 - [*Boxicons*](https://boxicons.com/)
 - [*Leaflet*](https://react-leaflet.js.org/)
+- [*React-Bootstrap*](https://react-bootstrap.netlify.app/)
 
 ## Tutorials
 

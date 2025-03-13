@@ -7,7 +7,7 @@ function CharacterCards() {
       {CHARACTERS.map((c, index) => (
         <div key={index} className="character-card">
           <div className="character-image-container">
-            <img className="character-image" src={c.image} alt={c.name} />
+            <img className="character-image" src={`/images/${c.image}`} alt={c.name} />
           </div>
           <h3 className="character-name">{c.name}</h3>
           <p className="character-description">{c.description}</p>
