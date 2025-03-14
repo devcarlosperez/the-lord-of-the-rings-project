@@ -11,6 +11,7 @@ function Header() {
         <a href="/home">Home</a>
         <a href="/characters">Characters</a>
         <a href="/hobbiton">Hobbiton</a>
+        <a href="/forum">Forum</a>
       </nav>
     </header>
   );

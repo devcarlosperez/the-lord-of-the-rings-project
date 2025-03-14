@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Characters from "./pages/characters/Characters";
-import MiddleEarthMap from "./pages/hobbiton/Hobbiton";
 import 'boxicons';
 import 'leaflet/dist/leaflet.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
+import Hobbiton from "./pages/hobbiton/Hobbiton";
+import Forum from "./pages/forum/Forum";
 
 function App() {
 
@@ -15,7 +16,8 @@ function App() {
         <Route path="*" element={<Home/>}/>
         <Route path="/home" element={<Home/>}/>
         <Route path="/characters" element={<Characters/>}/>
-        <Route path="/hobbiton" element={<MiddleEarthMap/>}/>
+        <Route path="/hobbiton" element={<Hobbiton/>}/>
+        <Route path="/forum" element={<Forum/>}/>
       </Routes>
     </BrowserRouter>
   )

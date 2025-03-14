@@ -1,8 +1,10 @@
 import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
 
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyCWWxy57Rj1Hsj6hp4tt0CJWI_2XN_Dt14",
   authDomain: "lord-of-the-rings-4444a.firebaseapp.com",
+  databaseURL: "https://lord-of-the-rings-4444a-default-rtdb.europe-west1.firebasedatabase.app/",
   projectId: "lord-of-the-rings-4444a",
   storageBucket: "lord-of-the-rings-4444a.firebasestorage.app",
   messagingSenderId: "107290559503",
@@ -10,3 +12,6 @@ const FIREBASE_CONFIG = {
 };
 
 const APP = initializeApp(FIREBASE_CONFIG);
+const DATABASE = getDatabase(APP);
+
+export { DATABASE };
