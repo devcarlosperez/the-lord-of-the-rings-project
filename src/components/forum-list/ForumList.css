@@ -1,0 +1,80 @@
+.forum-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: #EAD7B7;
+  margin: 20px;
+}
+
+.topic {
+  background-color: #3E2C1C;
+  color: #EEE118;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.comments {
+  background-color: #5A3E2B;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 12px;
+}
+
+.comment {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.comment p {
+  font-size: 14px;
+  color: #FFF;
+}
+
+.comment span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 4px;
+  color: #EEE118;
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .forum-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .topic {
+    font-size: 22px;
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .comment p {
+    font-size: 16px;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .forum-list {
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+  .topic {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .comment p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,44 @@
+.carousel {
+  max-width: 90%;
+  margin: 30px auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.carousel-caption h2 {
+  color: #FFD700;
+  font-size: 32px;
+  text-align: center;
+}
+
+.carousel-caption p {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .carousel-caption h2 {
+    font-size: 40px;
+  }
+
+  .carousel-caption p {
+    font-size: 18px;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .carousel-caption h2 {
+    font-size: 48px;
+  }
+
+  .carousel-caption p {
+    font-size: 19px;
+  }
+}
