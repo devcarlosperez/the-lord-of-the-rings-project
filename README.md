@@ -4,7 +4,7 @@
 
 This project is a comprehensive and interactive wiki dedicated to the world of J.R.R. Tolkien's *The Lord of the Rings*. It provides detailed information about the characters, places, events, and lore that shape the legendary Middle-earth.
 
-You can visit the live project here: [Lord of the Rings Wiki](lord-of-the-rings-4444a.web.app)
+You can visit the live project here: lord-of-the-rings-4444a.web.app
 
 ## Getting Started
 
