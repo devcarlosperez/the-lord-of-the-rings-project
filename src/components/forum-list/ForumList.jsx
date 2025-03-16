@@ -31,7 +31,9 @@ function ForumList() {
               const COMMENT = topic.comments[commentId];
               return (
                 <div key={commentId} className="comment">
-                  <p><strong>{COMMENT.username}</strong>: {COMMENT.message}</p>
+                  <p>
+                    <strong>{COMMENT.username}</strong>: {COMMENT.message}
+                  </p>
                   <span>{COMMENT.date}</span>
                 </div>
               );
@@ -41,6 +43,6 @@ function ForumList() {
       ))}
     </div>
   );
-};
+}
 
 export default ForumList;

@@ -11,7 +11,7 @@ function HobbitonMap() {
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
     shadowUrl: "/images/marker-shadow.png",
-    shadowSize: [41, 41]
+    shadowSize: [41, 41],
   });
 
   return (
