@@ -1,9 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Characters from "./pages/characters/Characters";
-import 'boxicons';
-import 'leaflet/dist/leaflet.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import Hobbiton from "./pages/hobbiton/Hobbiton";
 import Forum from "./pages/forum/Forum";

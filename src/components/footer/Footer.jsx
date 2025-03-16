@@ -12,16 +12,19 @@ function Footer() {
           </p>
           <div className="icons">
             <a href="https://github.com/devcarlosperez">
-              <i className="bx bxl-github"></i>
+              <i className="bx bxl-github"/>
             </a>
             <a href="#">
-              <i className="bx bxl-instagram"></i>
+              <i className="bx bxl-instagram"/>
             </a>
             <a href="#">
-              <i className="bx bxl-youtube"></i>
+              <i className="bx bxl-youtube"/>
             </a>
             <a href="#">
-              <i className="bx bxl-linkedin-square"></i>
+              <i className="bx bxl-linkedin-square"/>
+            </a>
+            <a href="/characters-rss.xml">
+              <i className='bx bx-rss'/>
             </a>
           </div>
         </div>
