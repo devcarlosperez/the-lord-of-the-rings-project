@@ -1,0 +1,79 @@
+{
+  "topics": {
+    "1": {
+      "topic": "The History of Middle-earth",
+      "comments": {
+        "1": {
+          "date": "2000-01-01",
+          "message": "Middle-earth has such a rich history! I love exploring the stories of the First Age.",
+          "username": "john_doe_1985"
+        },
+        "2": {
+          "date": "1999-05-23",
+          "message": "Agreed! The Wars of Beleriand were fascinating.",
+          "username": "elizabeth_w"
+        },
+        "3": {
+          "date": "2000-08-15",
+          "message": "The story of Morgoth and the creation of the Silmarils is amazing.",
+          "username": "susan_93"
+        },
+        "4": {
+          "date": "2001-01-25",
+          "message": "Don't forget the importance of the Valar in shaping Middle-earth.",
+          "username": "mark_thelord"
+        }
+      }
+    },
+    "2": {
+      "topic": "The Fellowship of the Ring",
+      "comments": {
+        "1": {
+          "date": "2001-12-25",
+          "message": "The bond between the members of the fellowship is incredible. Every character has their own strengths.",
+          "username": "emma_richards"
+        },
+        "2": {
+          "date": "2002-06-15",
+          "message": "I think Aragorn's journey from ranger to king is one of the best arcs in the story.",
+          "username": "michael_1992"
+        },
+        "3": {
+          "date": "2001-12-31",
+          "message": "Frodo is such a brave character, carrying the weight of the One Ring.",
+          "username": "julia_green"
+        },
+        "4": {
+          "date": "2002-01-20",
+          "message": "Boromir's betrayal and his redemption really adds depth to his character.",
+          "username": "ryan_james"
+        }
+      }
+    },
+    "3": {
+      "topic": "The Battle of Helm's Deep",
+      "comments": {
+        "1": {
+          "date": "2003-02-10",
+          "message": "Helm's Deep was an epic battle. The strategies and the courage of the defenders were amazing.",
+          "username": "lisa_smith"
+        },
+        "2": {
+          "date": "2003-03-01",
+          "message": "I still get chills when Gandalf arrives with the Riders of Rohan.",
+          "username": "david_white"
+        },
+        "3": {
+          "date": "2003-03-05",
+          "message": "The defenses of Helm's Deep were extraordinary, but the courage of the people of Rohan was unmatched.",
+          "username": "maria_perez"
+        },
+        "4": {
+          "date": "2003-02-28",
+          "message": "The scene where Théoden leads his men into battle is one of the most inspiring moments in the trilogy.",
+          "username": "alex_brown"
+        }
+      }
+    }
+  }
+}
