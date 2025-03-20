@@ -37,6 +37,12 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 - I followed a tutorial to implement the Scroll to Top button functionality: [Video](https://www.youtube.com/watch?v=pKbNCWb6USQ)
 - I followed a tutorial on how to implement RSS feeds from [W3Schools](https://www.w3schools.com/xml/xml_rss.asp)
 
+## RSS Feed Preview
+
+Here is a preview of the RSS feed displaying character data:
+
+[RSS Feed Screenshot](/images/rss-feed.png)
+
 ## Acknowdledgments
 
 Special thanks to Professor Tiburcio for his guidance and feedback, and to my classmates for their support and ideas throughout development.

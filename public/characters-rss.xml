@@ -2,66 +2,66 @@
 <rss version="2.0">
   <channel>
     <title>The Lord of the Rings Characters</title>
-    <link>http://localhost:5173/characters</link>
+    <link>https://lord-of-the-rings-4444a.web.app</link>
     <description>List of characters from The Lord of the Rings</description>
     <item>
       <title>Frodo Bolsón</title>
-      <link>http://localhost:5173/characters#frodo</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#frodo</link>
       <description>A hobbit from the Shire who carries the One Ring to Mount Doom.</description>
     </item>
     <item>
       <title>Aragorn</title>
-      <link>http://localhost:5173/characters#aragorn</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#aragorn</link>
       <description>A skilled ranger and heir to the throne of Gondor, he leads the fight against Sauron.</description>
     </item>
     <item>
       <title>Legolas</title>
-      <link>http://localhost:5173/characters#legolas</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#legolas</link>
       <description>An elven prince and skilled archer, member of the Fellowship of the Ring.</description>
     </item>
     <item>
       <title>Saruman</title>
-      <link>http://localhost:5173/characters#saruman</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#saruman</link>
       <description>A powerful wizard who becomes corrupted by the desire for the One Ring.</description>
     </item>
     <item>
       <title>Sam Gamgee</title>
-      <link>http://localhost:5173/characters#sam</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#sam</link>
       <description>Frodo's loyal companion, who supports him on the journey to destroy the One Ring.</description>
     </item>
     <item>
       <title>Faramir</title>
-      <link>http://localhost:5173/characters#faramir</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#faramir</link>
       <description>The brother of Boromir and a noble captain of Gondor, who aids Frodo and Sam.</description>
     </item>
     <item>
       <title>Gandalf</title>
-      <link>http://localhost:5173/characters#gandalf</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#gandalf</link>
       <description>A wise wizard who guides the Fellowship in their quest to destroy the One Ring.</description>
     </item>
     <item>
       <title>Gimli</title>
-      <link>http://localhost:5173/characters#gimli</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#gimli</link>
       <description>A brave dwarf and member of the Fellowship, known for his strength and loyalty.</description>
     </item>
     <item>
       <title>Boromir</title>
-      <link>http://localhost:5173/characters#boromir</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#boromir</link>
       <description>A noble but flawed warrior of Gondor, whose desire for the Ring leads to his downfall.</description>
     </item>
     <item>
       <title>Gollum</title>
-      <link>http://localhost:5173/characters#gollum</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#gollum</link>
       <description>A creature corrupted by the power of the One Ring, obsessed with retrieving it.</description>
     </item>
     <item>
       <title>Pippin</title>
-      <link>http://localhost:5173/characters#pippin</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#pippin</link>
       <description>A hobbit and member of the Fellowship, known for his curiosity and bravery.</description>
     </item>
     <item>
       <title>Merry</title>
-      <link>http://localhost:5173/characters#merry</link>
+      <link>https://lord-of-the-rings-4444a.web.app/characters#merry</link>
       <description>A hobbit and loyal friend to Frodo, who plays a key role in the War of the Ring.</description>
     </item>
   </channel>
