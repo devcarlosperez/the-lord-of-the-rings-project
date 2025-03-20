@@ -39,9 +39,7 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 
 ## RSS Feed Preview
 
-Here is a preview of the RSS feed displaying character data:
-
-[RSS Feed Screenshot](/images/rss-feed.png)
+[RSS Feed Screenshot](https://github.com/devcarlosperez/the-lord-of-the-rings-project/blob/develop/rss-feed.png?raw=true)
 
 ## Acknowdledgments
 
