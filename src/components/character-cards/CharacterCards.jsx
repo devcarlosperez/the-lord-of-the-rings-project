@@ -1,18 +1,7 @@
-import { useEffect } from "react";
 import "./CharacterCards.css";
 import CHARACTERS from "../../services/characters";
 
 function CharacterCards() {
-  useEffect(() => {
-    const CHARACTER_ID = window.location.hash.slice(1);
-    if (CHARACTER_ID) {
-      const CHARACTER_ELEMENT = document.getElementById(CHARACTER_ID);
-      if (CHARACTER_ELEMENT) {
-        CHARACTER_ELEMENT.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, []);
-
   return (
     <div className="character-cards-container">
       {CHARACTERS.map((c, index) => (
