@@ -44,6 +44,22 @@
   color: #EEE118;
 }
 
+.button-crud {
+  background-color: #5A3E2B;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-crud:hover {
+  background-color: #cf2f0d;
+}
+
 /* 📌 Medium devices (768px and up) */
 @media only screen and (min-width: 768px) {
   .forum-list {
