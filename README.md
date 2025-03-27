@@ -30,6 +30,7 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 - [*Boxicons*](https://boxicons.com/)
 - [*Leaflet*](https://react-leaflet.js.org/)
 - [*React-Bootstrap*](https://react-bootstrap.netlify.app/)
+- [*Material UI*](https://mui.com/)
 
 ## Tutorials
 
@@ -39,11 +40,7 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 
 ## RSS Feed Preview
 
-<<<<<<< HEAD
 [RSS Feed Screenshot](https://github.com/devcarlosperez/the-lord-of-the-rings-project/blob/develop/rss-feed.png?raw=true)
-=======
-![RSS FEED](https://github.com/devcarlosperez/the-lord-of-the-rings-project/blob/develop/rss-feed.png?raw=true)
->>>>>>> 46b08d4ce72dba17c0d83f47d3a07162bc85cc32
 
 ## Acknowdledgments
 
