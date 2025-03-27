@@ -17,10 +17,11 @@
 }
 
 .menu-button {
-  position: fixed;
-  top: 15px;
-  right: 15px;
+  position: absolute;
+  z-index: 999;
   background: none;
+  top: 10px;
+  right: 15px;
   border: none;
   font-size: 28px;
   color: #ffffff;
@@ -51,6 +52,10 @@
   color: #eee118;
 }
 
+.logo-name {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -70,6 +75,9 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  .logo-name {
+    display: flex;
+  }
   .header-container {
     flex-direction: row;
     justify-content: space-between;

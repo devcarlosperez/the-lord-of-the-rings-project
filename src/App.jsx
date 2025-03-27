@@ -4,6 +4,8 @@ import Characters from "./pages/characters/Characters";
 import "./App.css"
 import Hobbiton from "./pages/hobbiton/Hobbiton";
 import Forum from "./pages/forum/Forum";
+import PrivacyPolicy from "./pages/privacy-policy/PrivacyPolicy";
+import TermConditions from "./pages/term-conditions/TermConditions";
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
         <Route path="/characters" element={<Characters/>}/>
         <Route path="/hobbiton" element={<Hobbiton/>}/>
         <Route path="/forum" element={<Forum/>}/>
+        <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+        <Route path="/terms-conditions" element={<TermConditions/>}/>
       </Routes>
     </BrowserRouter>
   )

@@ -68,10 +68,10 @@ function Footer() {
             <h4>Help</h4>
             <ul>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="/privacy-policy">Privacy Policy</a>
               </li>
               <li>
-                <a href="#">Terms and Conditions</a>
+                <a href="/terms-conditions">Terms and Conditions</a>
               </li>
               <li>
                 <a href="#">Blog</a>
