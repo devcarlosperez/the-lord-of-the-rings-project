@@ -17,11 +17,9 @@
 }
 
 .menu-button {
-  position: absolute;
-  z-index: 999;
-  background: none;
-  top: 10px;
-  right: 15px;
+  position: relative;
+  background-color: #2C3E50;
+  width: 100%;
   border: none;
   font-size: 28px;
   color: #ffffff;

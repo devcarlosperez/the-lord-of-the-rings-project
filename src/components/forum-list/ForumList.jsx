@@ -21,7 +21,7 @@ function ForumList() {
     });
   }, []);
 
-  const handleDeleteComment = (TOPIC_ID, COMMENT_ID) => {
+  const HANDLE_DELETE_COMMENT = (TOPIC_ID, COMMENT_ID) => {
     const COMMENT_REF = ref(
       DATABASE,
       `topics/${TOPIC_ID}/comments/${COMMENT_ID}`
@@ -33,7 +33,10 @@ function ForumList() {
     <div className="forum-list">
       {TOPICS.map((TOPIC) => (
         <div key={TOPIC.id} className="topic-card">
-          <h2>{TOPIC.topic}</h2>
+          <div className="topic-addcoment-container">
+            <h2>{TOPIC.topic}</h2>
+            <button className="button-add-crud">ADD COMMENT</button>
+          </div>
           <div className="comments">
             {Object.keys(TOPIC.comments).map((COMMENT_ID) => {
               const COMMENT = TOPIC.comments[COMMENT_ID];
@@ -43,9 +46,10 @@ function ForumList() {
                     <strong>{COMMENT.username}</strong>: {COMMENT.message}
                   </p>
                   <span>{COMMENT.date}</span>
-                  <button className="button-crud"
-                    onClick={() => handleDeleteComment(TOPIC.id, COMMENT_ID)}
+                  <button className="button-delete-crud"
+                    onClick={() => HANDLE_DELETE_COMMENT(TOPIC.id, COMMENT_ID)}
                   >DELETE COMMENT</button>
+                  <button className="button-update-crud">UPDATE COMMENT</button>
                 </div>
               );
             })}

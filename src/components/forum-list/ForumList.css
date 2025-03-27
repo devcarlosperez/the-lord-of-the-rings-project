@@ -44,7 +44,14 @@
   color: #EEE118;
 }
 
-.button-crud {
+.topic-addcoment-container {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 15px;
+}
+
+.button-delete-crud {
   background-color: #5A3E2B;
   color: white;
   font-weight: bold;
@@ -56,8 +63,41 @@
   transition: background-color 0.3s ease;
 }
 
-.button-crud:hover {
+.button-delete-crud:hover {
   background-color: #cf2f0d;
+}
+
+.button-update-crud {
+  background-color: #5A3E2B;
+  margin-left: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-update-crud:hover {
+  background-color: #c1aa1c;
+}
+
+.button-add-crud {
+  background-color: #5A3E2B;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-add-crud:hover {
+  background-color: #076328;
 }
 
 /* 📌 Medium devices (768px and up) */
