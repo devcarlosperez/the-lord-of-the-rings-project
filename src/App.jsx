@@ -20,7 +20,9 @@ function App() {
         <Route path="/hobbiton" element={<Hobbiton/>}/>
         <Route path="/forum" element={<Forum/>}/>
         <Route path="/form-add-comment" element={<FormAddComment/>}/>
+        <Route path="/form-add-comment/:topicId" element={<FormAddComment/>}/>
         <Route path="/form-update-comment" element={<FormUpdateComment/>}/>
+        <Route path="/form-update-comment/:topicId/:commentId" element={<FormUpdateComment />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
         <Route path="/terms-conditions" element={<TermConditions/>}/>
       </Routes>

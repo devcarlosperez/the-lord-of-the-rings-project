@@ -45,21 +45,6 @@ input {
   box-shadow: none;
 }
 
-button {
-  padding: 10px;
-  font-size: 16px;
-  background-color: #5a3e2b;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 16px;
-}
-
-button:hover {
-  background-color: #3e2c1c;
-}
-
 .button-submit {
   width: 50%;
   margin-top: 20px;
@@ -96,7 +81,7 @@ button:hover {
     padding: 10px;
   }
 
-  button, .button-submit {
+  .button-submit {
     font-size: 18px;
     padding: 12px;
   }
@@ -122,7 +107,7 @@ button:hover {
     padding: 12px;
   }
 
-  button, .button-submit {
+  .button-submit {
     font-size: 20px;
     padding: 14px;
   }

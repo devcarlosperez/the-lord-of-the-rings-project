@@ -1,31 +1,87 @@
+import { useState } from "react";
+import { ref, push } from "firebase/database";
+import { DATABASE } from "../../firebase";
+import { useNavigate, useParams } from "react-router-dom";
 import "./AddComment.css";
-import * as React from "react";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import TextField from "@mui/material/TextField";
+import dayjs from 'dayjs';
 
 function AddComment() {
-  const [selectedDate, setSelectedDate] = React.useState(null);
+  const navigate = useNavigate();
+  const { topicId } = useParams();
+
+  const [formData, setFormData] = useState({
+    username: "",
+    message: "",
+    date: null
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleDateChange = (newDate) => {
+    setFormData(prev => ({
+      ...prev,
+      date: newDate ? dayjs(newDate).format('YYYY-MM-DD') : null
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+ 
+
+    try {
+      const commentsRef = ref(DATABASE, `topics/${topicId}/comments`);
+      await push(commentsRef, {
+        username: formData.username,
+        message: formData.message,
+        date: formData.date
+      });
+
+      navigate('/forum');
+    } catch (error) {
+      console.error("Error al añadir comentario:", error);
+      alert("Error al añadir el comentario");
+    }
+  };
 
   return (
-    <form className="form-add-comment">
+    <form className="form-add-comment" onSubmit={handleSubmit}>
       <div className="camps">
         <div>
           <label>Username</label>
-          <input type="text" name="username" id="username" required />
+          <input 
+            type="text" 
+            name="username" 
+            value={formData.username}
+            onChange={handleChange}
+            required 
+          />
         </div>
         <div>
           <label>Message</label>
-          <input type="text" name="message" id="message" required />
+          <input 
+            type="text" 
+            name="message" 
+            value={formData.message}
+            onChange={handleChange}
+            required 
+          />
         </div>
         <div>
           <label>Date</label>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker
-              value={selectedDate}
-              onChange={(newValue) => setSelectedDate(newValue)}
-              renderInput={(params) => <TextField {...params} />}
+              value={formData.date ? dayjs(formData.date) : null}
+              onChange={handleDateChange}
+              slotProps={{ textField: { fullWidth: true } }}
             />
           </LocalizationProvider>
         </div>

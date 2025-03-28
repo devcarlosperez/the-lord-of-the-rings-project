@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ref, onValue, remove } from "firebase/database";
 import { DATABASE } from "../../firebase";
+import { Link } from "react-router-dom";
 import "./ForumList.css";
 
 function ForumList() {
@@ -35,7 +36,9 @@ function ForumList() {
         <div key={TOPIC.id} className="topic-card">
           <div className="topic-addcoment-container">
             <h2>{TOPIC.topic}</h2>
-            <button className="button-add-crud">ADD COMMENT</button>
+            <Link to={`/form-add-comment/${TOPIC.id}`}>
+              <button className="button-add-crud">ADD COMMENT</button>
+            </Link>
           </div>
           <div className="comments">
             {Object.keys(TOPIC.comments).map((COMMENT_ID) => {
@@ -49,7 +52,9 @@ function ForumList() {
                   <button className="button-delete-crud"
                     onClick={() => HANDLE_DELETE_COMMENT(TOPIC.id, COMMENT_ID)}
                   >DELETE COMMENT</button>
-                  <button className="button-update-crud">UPDATE COMMENT</button>
+                  <Link to={`/form-update-comment/${TOPIC.id}/${COMMENT_ID}`}>
+                    <button className="button-update-crud">UPDATE COMMENT</button>
+                  </Link>
                 </div>
               );
             })}
