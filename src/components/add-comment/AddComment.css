@@ -1,0 +1,129 @@
+.form-add-comment {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #EAD7B7;
+  -webkit-box-shadow: 0px 0px 39px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 39px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 39px -7px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.camps {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.camps div {
+  margin-bottom: 12px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.MuiTextField-root {
+  width: 100%;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #5a3e2b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+button:hover {
+  background-color: #3e2c1c;
+}
+
+.button-submit {
+  width: 50%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #5a3e2b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #3e2c1c;
+}
+
+/* 📌 Medium devices (768px and up) */
+@media only screen and (min-width: 768px) {
+  .form-add-comment {
+    max-width: 600px;
+    padding: 32px;
+  }
+
+  .camps div {
+    margin-bottom: 16px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  button, .button-submit {
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+/* 📌 Large devices (1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .form-add-comment {
+    max-width: 800px;
+    padding: 40px;
+  }
+
+  .camps div {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  button, .button-submit {
+    font-size: 20px;
+    padding: 14px;
+  }
+}
