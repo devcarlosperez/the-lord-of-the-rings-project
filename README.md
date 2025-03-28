@@ -40,7 +40,7 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 
 ## RSS Feed Preview
 
-[RSS Feed Screenshot](public/images/rss-feedreader.png)
+![RSS Feed Screenshot](public/images/rss-feedreader.png)
 
 ## Acknowdledgments
 
