@@ -40,7 +40,7 @@ https://www.figma.com/design/FJgz7zitdGzItB1Z01V2LE/NFT-Marketplace-Website-(Com
 
 ## RSS Feed Preview
 
-[RSS Feed Screenshot](https://github.com/devcarlosperez/the-lord-of-the-rings-project/blob/develop/rss-feed.png?raw=true)
+[RSS Feed Screenshot](public/images/rss-feedreader.png)
 
 ## Acknowdledgments
 
