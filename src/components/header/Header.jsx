@@ -22,6 +22,8 @@ function Header() {
         <a href="/characters">Characters</a>
         <a href="/hobbiton">Hobbiton</a>
         <a href="/forum">Forum</a>
+        <button className="button-authentication-sign-in">Sign In</button>
+        <button className="button-authentication-sign-up">Sign Up</button>
       </nav>
     </header>
   );
