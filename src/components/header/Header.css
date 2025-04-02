@@ -1,127 +1,110 @@
-.header-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header {
   background-color: #2C3E50;
-  width: 100%;
-  padding: 10px 0;
-}
-
-.header-container {
-  display: none;
-}
-
-.header-container.show {
-  display: flex;
-}
-
-.menu-button {
+  padding: 16px;
   position: relative;
-  background-color: #2C3E50;
-  width: 100%;
-  border: none;
-  font-size: 28px;
-  color: #ffffff;
-  cursor: pointer;
-  z-index: 1000;
 }
 
-.logo {
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
   display: flex;
   align-items: center;
+  gap: 16px;
   text-decoration: none;
-  gap: 10px;
+  color: white;
 }
 
-.logo-image {
-  height: 80px;
-  width: 90px;
+.header-logo img {
+  width: 80px;
+  height: 90px;
 }
 
-.logo-name {
+.header-menu {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.header-logo h2 {
   font-size: 18px;
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.logo-name:hover {
-  color: #eee118;
-}
-
-.logo-name {
-  display: none;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-nav a {
   font-weight: 600;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 5px;
 }
 
-nav a:hover {
+.header-logo h2:hover {
   color: #eee118;
 }
 
-@media only screen and (min-width: 768px) {
-  .logo-name {
-    display: flex;
+.header-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #2C3E50;
+  padding: 16px;
+}
+
+.header-nav.active {
+  display: flex;
+}
+
+.header-nav a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 0;
+}
+
+.header-nav a:hover {
+  color: #eee118;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .header-menu {
+    display: none;
   }
-  .header-container {
+
+  .header-nav {
+    display: flex;
     flex-direction: row;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .header-nav a {
+    font-size: 18px;
+  }
+
+  .header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
-    height: 70px;
-    display: flex;
+    padding: 16px 32px;
   }
 
-  .logo {
-    flex-direction: row;
-  }
-
-  .logo-image {
-    height: 60px;
-  }
-
-  .logo-name {
+  .header-logo h2 {
     font-size: 22px;
   }
 
-  nav {
-    margin-top: 0;
-  }
-
-  .menu-button {
-    display: none;
+  .header-logo img {
+    height: 60px;
   }
 }
 
-/* 📌 Large devices (1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .header-container {
-    padding: 0 20px;
-    height: 80px;
+@media (min-width: 1200px) {
+  .header {
+    padding: 16px 40px;
   }
 
-  .logo-image {
-    height: 70px;
-  }
-
-  .logo-name {
+  .header-logo h2 {
     font-size: 24px;
   }
 
-  nav {
-    gap: 20px;
+  .header-logo img {
+    height: 70px;
   }
 }
