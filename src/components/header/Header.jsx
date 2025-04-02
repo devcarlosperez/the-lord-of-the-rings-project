@@ -20,7 +20,7 @@ function Header() {
       <nav className={`header-nav ${isOpen ? 'active' : ''}`}>
         <a href="/home">Home</a>
         <a href="/characters">Characters</a>
-        <a href="/hobbiton">Hobbiton</a>
+        <a href="/locations">Locations</a>
         <a href="/forum">Forum</a>
         <button className="button-authentication-sign-in">Sign In</button>
         <button className="button-authentication-sign-up">Sign Up</button>

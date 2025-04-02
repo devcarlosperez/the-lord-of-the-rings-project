@@ -106,7 +106,7 @@ function UpdateComment() {
           </LocalizationProvider>
         </div>
       </div>
-      <button type="submit" className="button-submit">Actualizar</button>
+      <button type="submit" className="button-submit">UPDATE</button>
     </form>
   );
 }

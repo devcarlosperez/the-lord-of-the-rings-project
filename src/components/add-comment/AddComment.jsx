@@ -86,7 +86,7 @@ function AddComment() {
           </LocalizationProvider>
         </div>
       </div>
-      <button type="submit" className="button-submit">Enviar</button>
+      <button type="submit" className="button-submit">SEND</button>
     </form>
   );
 }

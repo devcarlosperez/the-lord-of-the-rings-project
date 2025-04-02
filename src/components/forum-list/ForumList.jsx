@@ -5,56 +5,87 @@ import { Link } from "react-router-dom";
 import "./ForumList.css";
 
 function ForumList() {
-  const [TOPICS, setTopics] = useState([]);
+  const [topics, setTopics] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const TOPICS_REF = ref(DATABASE, "topics");
+    const topicsRef = ref(DATABASE, "topics");
 
-    onValue(TOPICS_REF, (snapshot) => {
-      if (snapshot.exists()) {
-        const DATA = snapshot.val();
-        const TOPICS_ARRAY = Object.keys(DATA).map((key) => ({
-          id: key,
-          ...DATA[key],
-        }));
-        setTopics(TOPICS_ARRAY);
-      }
-    });
+    try {
+      onValue(topicsRef, (snapshot) => {
+        if (snapshot.exists()) {
+          const data = snapshot.val();
+          const topicsArray = Object.keys(data).map((key) => ({
+            id: key,
+            ...data[key],
+            comments: data[key].comments || {} 
+          }));
+          setTopics(topicsArray);
+        } else {
+          setTopics([]);
+        }
+        setIsLoading(false);
+      });
+    } catch (err) {
+      setError(err.message);
+      setIsLoading(false);
+    }
   }, []);
 
-  const HANDLE_DELETE_COMMENT = (TOPIC_ID, COMMENT_ID) => {
-    const COMMENT_REF = ref(
+  const handleDeleteComment = (topicId, commentId) => {
+    const commentRef = ref(
       DATABASE,
-      `topics/${TOPIC_ID}/comments/${COMMENT_ID}`
+      `topics/${topicId}/comments/${commentId}`
     );
-    remove(COMMENT_REF);
+    remove(commentRef);
   };
+
+  if (isLoading) {
+    return <div className="loading">Loading forum topics...</div>;
+  }
+
+  if (error) {
+    return <div className="error">Error: {error}</div>;
+  }
+
+  if (!topics || topics.length === 0) {
+    return <div className="no-topics">No topics available in the forum</div>;
+  }
 
   return (
     <div className="forum-list">
-      {TOPICS.map((TOPIC) => (
-        <div key={TOPIC.id} className="topic-card">
-          <div className="topic-addcoment-container">
-            <h2>{TOPIC.topic}</h2>
-            <Link to={`/form-add-comment/${TOPIC.id}`}>
+      {topics.map((topic) => (
+        <div key={topic.id} className="topic-card">
+          <div className="topic-add-comment-container">
+            <h2>{topic.topic}</h2>
+            <Link to={`/form-add-comment/${topic.id}`}>
               <button className="button-add-crud">ADD COMMENT</button>
             </Link>
           </div>
+          
           <div className="comments">
-            {Object.keys(TOPIC.comments).map((COMMENT_ID) => {
-              const COMMENT = TOPIC.comments[COMMENT_ID];
+            {Object.keys(topic.comments).map((commentId) => {
+              const comment = topic.comments[commentId];
               return (
-                <div key={COMMENT_ID} className="comment">
+                <div key={commentId} className="comment">
                   <p>
-                    <strong>{COMMENT.username}</strong>: {COMMENT.message}
+                    <strong>{comment.username}</strong>: {comment.message}
                   </p>
-                  <span>{COMMENT.date}</span>
-                  <button className="button-delete-crud"
-                    onClick={() => HANDLE_DELETE_COMMENT(TOPIC.id, COMMENT_ID)}
-                  >DELETE COMMENT</button>
-                  <Link to={`/form-update-comment/${TOPIC.id}/${COMMENT_ID}`}>
-                    <button className="button-update-crud">UPDATE COMMENT</button>
-                  </Link>
+                  <span>{comment.date}</span>
+                  <div className="comment-buttons">
+                    <button 
+                      className="button-delete-crud"
+                      onClick={() => handleDeleteComment(topic.id, commentId)}
+                    >
+                      DELETE COMMENT
+                    </button>
+                    <Link to={`/form-update-comment/${topic.id}/${commentId}`}>
+                      <button className="button-update-crud">
+                        UPDATE COMMENT
+                      </button>
+                    </Link>
+                  </div>
                 </div>
               );
             })}
