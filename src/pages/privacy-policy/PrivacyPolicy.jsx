@@ -5,7 +5,7 @@ import "./PrivacyPolicy.css";
 function PrivacyPolicy() {
   return (
     <>
-      <Header />
+      <Header/>
       <div className="privacy-policy-content">
         <h1>Privacy Policy for Lord of The Rings</h1>
         <p>

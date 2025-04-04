@@ -7,7 +7,7 @@ import MapLocationsMovies from "../../components/map-locations-movies/MapLocatio
 function Locations() {
   return (
     <>
-      <Header />
+      <Header/>
       <Banner title="Locations" image="/images/banner-hobbiton.webp" />
       <MapLocationsMovies/>
       <Footer />

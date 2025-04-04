@@ -9,7 +9,7 @@ import MiddleEarthMap from "../../components/middle-earth-map/MiddleEarthMap";
 function Home() {
   return (
     <>
-      <Header />
+      <Header/>
       <Banner title="Home" image="/images/banner-home.webp" />
       <IntroductionWeb />
       <MiddleEarthMap />

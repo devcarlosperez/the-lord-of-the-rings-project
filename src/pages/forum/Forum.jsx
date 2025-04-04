@@ -7,7 +7,7 @@ import Header from "../../components/header/Header";
 function Forum() {
   return (
     <>
-      <Header />
+      <Header/>
       <Banner title="Forum" image="/images/banner-forum.webp" />
       <ForumList/>
       <Footer />

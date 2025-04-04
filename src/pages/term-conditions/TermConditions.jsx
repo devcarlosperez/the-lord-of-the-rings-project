@@ -5,7 +5,7 @@ import "./TermConditions.css";
 function TermConditions() {
   return (
     <>
-      <Header />
+      <Header/>
       <div className="term-conditions-content">
         <h1>Terms and Conditions for Lord of The Rings</h1>
         <p>
