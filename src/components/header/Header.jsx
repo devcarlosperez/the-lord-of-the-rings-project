@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,9 @@ function Header() {
         <a href="/characters">Characters</a>
         <a href="/locations">Locations</a>
         <a href="/forum">Forum</a>
-        <button className="button-authentication-sign-in">Log In</button>
-        <button className="button-authentication-sign-up">Sign Up</button>
+        <Link to="/sign-in">
+          <button className="button-authentication-sign-in">Sign In</button>
+        </Link>
       </nav>
     </header>
   );

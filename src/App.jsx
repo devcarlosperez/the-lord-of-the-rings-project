@@ -8,6 +8,7 @@ import TermConditions from "./pages/term-conditions/TermConditions";
 import FormAddComment from "./pages/form-add-comment/FormAddComment";
 import FormUpdateComment from "./pages/form-update-comment/FormUpdateComment";
 import Locations from "./pages/locations/Locations";
+import SignIn from "./pages/sign-in/SignIn";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/form-update-comment/:topicId/:commentId" element={<FormUpdateComment />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
         <Route path="/terms-conditions" element={<TermConditions/>}/>
+        <Route path="/sign-in" element={<SignIn/>}/>
       </Routes>
     </BrowserRouter>
   )
