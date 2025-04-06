@@ -6,7 +6,7 @@ import "./UpdateComment.css";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
 function UpdateComment() {
   const navigate = useNavigate();
@@ -14,21 +14,24 @@ function UpdateComment() {
   const [formData, setFormData] = useState({
     username: "",
     message: "",
-    date: null
+    date: null,
   });
 
   useEffect(() => {
     const fetchComment = async () => {
       try {
-        const commentRef = ref(DATABASE, `topics/${topicId}/comments/${commentId}`);
+        const commentRef = ref(
+          DATABASE,
+          `topics/${topicId}/comments/${commentId}`
+        );
         const snapshot = await get(commentRef);
-        
+
         if (snapshot.exists()) {
           const commentData = snapshot.val();
           setFormData({
             username: commentData.username,
             message: commentData.message,
-            date: commentData.date
+            date: commentData.date,
           });
         }
       } catch (error) {
@@ -41,16 +44,16 @@ function UpdateComment() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleDateChange = (newDate) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      date: newDate ? dayjs(newDate).format('YYYY-MM-DD') : null
+      date: newDate ? dayjs(newDate).format("YYYY-MM-DD") : null,
     }));
   };
 
@@ -58,14 +61,17 @@ function UpdateComment() {
     e.preventDefault();
 
     try {
-      const commentRef = ref(DATABASE, `topics/${topicId}/comments/${commentId}`);
+      const commentRef = ref(
+        DATABASE,
+        `topics/${topicId}/comments/${commentId}`
+      );
       await update(commentRef, {
         username: formData.username,
         message: formData.message,
-        date: formData.date
+        date: formData.date,
       });
 
-      navigate('/forum');
+      navigate("/forum");
     } catch (error) {
       console.error("Error al actualizar el comentario:", error);
       alert("Error al actualizar el comentario");
@@ -77,22 +83,22 @@ function UpdateComment() {
       <div className="camps">
         <div>
           <label>Username</label>
-          <input 
-            type="text" 
-            name="username" 
+          <input
+            type="text"
+            name="username"
             value={formData.username}
             onChange={handleChange}
-            required 
+            required
           />
         </div>
         <div>
           <label>Message</label>
-          <input 
-            type="text" 
-            name="message" 
+          <input
+            type="text"
+            name="message"
             value={formData.message}
             onChange={handleChange}
-            required 
+            required
           />
         </div>
         <div>
@@ -106,7 +112,9 @@ function UpdateComment() {
           </LocalizationProvider>
         </div>
       </div>
-      <button type="submit" className="button-submit">UPDATE</button>
+      <button type="submit" className="button-submit">
+        UPDATE
+      </button>
     </form>
   );
 }

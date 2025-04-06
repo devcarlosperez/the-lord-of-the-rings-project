@@ -6,7 +6,7 @@ import "./AddComment.css";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import dayjs from 'dayjs';
+import dayjs from "dayjs";
 
 function AddComment() {
   const navigate = useNavigate();
@@ -15,37 +15,36 @@ function AddComment() {
   const [formData, setFormData] = useState({
     username: "",
     message: "",
-    date: null
+    date: null,
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleDateChange = (newDate) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      date: newDate ? dayjs(newDate).format('YYYY-MM-DD') : null
+      date: newDate ? dayjs(newDate).format("YYYY-MM-DD") : null,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
- 
 
     try {
       const commentsRef = ref(DATABASE, `topics/${topicId}/comments`);
       await push(commentsRef, {
         username: formData.username,
         message: formData.message,
-        date: formData.date
+        date: formData.date,
       });
 
-      navigate('/forum');
+      navigate("/forum");
     } catch (error) {
       console.error("Error al añadir comentario:", error);
       alert("Error al añadir el comentario");
@@ -57,22 +56,22 @@ function AddComment() {
       <div className="camps">
         <div>
           <label>Username</label>
-          <input 
-            type="text" 
-            name="username" 
+          <input
+            type="text"
+            name="username"
             value={formData.username}
             onChange={handleChange}
-            required 
+            required
           />
         </div>
         <div>
           <label>Message</label>
-          <input 
-            type="text" 
-            name="message" 
+          <input
+            type="text"
+            name="message"
             value={formData.message}
             onChange={handleChange}
-            required 
+            required
           />
         </div>
         <div>
@@ -86,7 +85,9 @@ function AddComment() {
           </LocalizationProvider>
         </div>
       </div>
-      <button type="submit" className="button-submit">SEND</button>
+      <button type="submit" className="button-submit">
+        SEND
+      </button>
     </form>
   );
 }

@@ -12,7 +12,8 @@ function MapLocationsMovies() {
     {
       name: "Mordor (Mount Doom)",
       position: [-39.291, 175.563],
-      description: "Filming location for Mount Doom in the Tongariro National Park.",
+      description:
+        "Filming location for Mount Doom in the Tongariro National Park.",
     },
     {
       name: "Rivendel",
@@ -27,12 +28,14 @@ function MapLocationsMovies() {
     {
       name: "Lothlórien",
       position: [-44.8548, 168.3823],
-      description: "The beautiful forest of Lothlórien was filmed in Paradise, near Glenorchy.",
+      description:
+        "The beautiful forest of Lothlórien was filmed in Paradise, near Glenorchy.",
     },
     {
       name: "Goblin Caves",
       position: [-38.2617, 175.1108],
-      description: "Waitomo Caves were used for the Goblin Caves in 'The Hobbit'.",
+      description:
+        "Waitomo Caves were used for the Goblin Caves in 'The Hobbit'.",
     },
   ];
 

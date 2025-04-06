@@ -7,11 +7,11 @@ import Header from "../../components/header/Header";
 function Characters() {
   return (
     <>
-      <Header/>
+      <Header />
       <Banner title="Characters" image="/images/banner-characters.webp" />
       <CharacterCards />
       <Footer />
-      <ButtonUp/>
+      <ButtonUp />
     </>
   );
 }

@@ -5,9 +5,9 @@ import Header from "../../components/header/Header";
 function FormAddComment() {
   return (
     <>
-      <Header/>
-      <AddComment/>
-      <Footer/>
+      <Header />
+      <AddComment />
+      <Footer />
     </>
   );
 }

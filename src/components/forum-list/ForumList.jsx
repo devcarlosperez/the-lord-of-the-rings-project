@@ -19,7 +19,7 @@ function ForumList() {
           const topicsArray = Object.keys(data).map((key) => ({
             id: key,
             ...data[key],
-            comments: data[key].comments || {} 
+            comments: data[key].comments || {},
           }));
           setTopics(topicsArray);
         } else {
@@ -34,10 +34,7 @@ function ForumList() {
   }, []);
 
   const handleDeleteComment = (topicId, commentId) => {
-    const commentRef = ref(
-      DATABASE,
-      `topics/${topicId}/comments/${commentId}`
-    );
+    const commentRef = ref(DATABASE, `topics/${topicId}/comments/${commentId}`);
     remove(commentRef);
   };
 
@@ -63,7 +60,7 @@ function ForumList() {
               <button className="button-add-crud">ADD COMMENT</button>
             </Link>
           </div>
-          
+
           <div className="comments">
             {Object.keys(topic.comments).map((commentId) => {
               const comment = topic.comments[commentId];
@@ -74,7 +71,7 @@ function ForumList() {
                   </p>
                   <span>{comment.date}</span>
                   <div className="comment-buttons">
-                    <button 
+                    <button
                       className="button-delete-crud"
                       onClick={() => handleDeleteComment(topic.id, commentId)}
                     >
